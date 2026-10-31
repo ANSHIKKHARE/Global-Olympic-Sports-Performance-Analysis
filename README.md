@@ -39,7 +39,7 @@ Netlify	Website deployment
 
 The project website provides an organized interface to access the Olympic analysis dashboard and project information.
 
-Live Website: https://YOUR-NETLIFY-WEBSITE-LINK
+Live Website: https://anshikkhare.github.io/Global-Olympic-Sports-Performance-Analysis/
 
 📁 Project Structure
 
