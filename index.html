@@ -1,1 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Global Olympic Sports Analysis</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+}
+
+/* Navigation */
+
+nav {
+    background: #101d36;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    font-size: 23px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul a:hover {
+    color: #fca311;
+}
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(120deg, #14213d, #284b83);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e2e8f0;
+}
+
+.hero a {
+    background: #fca311;
+    color: #101d36;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Sections */
+
+.container {
+    width: 90%;
+    max-width: 1250px;
+    margin: 50px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #14213d;
+    margin-bottom: 12px;
+}
+
+/* About */
+
+.about {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    line-height: 1.8;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+/* Dashboard */
+
+.dashboard-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px #00000015;
+}
+
+.dashboard-box iframe {
+    width: 100%;
+    height: 750px;
+    border: none;
+}
+
+/* Dashboard button */
+
+.dashboard-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #14213d;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.dashboard-button:hover {
+    background: #fca311;
+    color: #14213d;
+}
+
+/* Project Details */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.card h3 {
+    color: #14213d;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+footer {
+    background: #101d36;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 1.8;
+}
+
+footer p {
+    color: #ddd;
+}
+
+/* Mobile */
+
+@media(max-width: 768px) {
+    nav {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .dashboard-box iframe {
+        height: 550px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <h2>Olympic Analytics</h2>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+    <h1>Global Olympic Sports Analysis</h1>
+
+    <p>
+        Exploring Olympic History Through Data Analytics
+        and Interactive Visualization
+    </p>
+
+    <a href="#dashboard">Explore Dashboard</a>
+
+</section>
+
+<!-- About -->
+
+<section class="container" id="about">
+
+    <div class="section-title">
+        <h2>About The Project</h2>
+    </div>
+
+    <div class="about">
+
+        <p>
+            Global Olympic Sports Analysis is a data visualization
+            project designed to explore Olympic Games data.
+            This project uses Tableau dashboards to present
+            meaningful insights into Olympic sports, countries,
+            athletes and historical performance.
+        </p>
+
+        <p>
+            The objective is to understand trends and patterns
+            in Olympic history through interactive data analysis
+            and visualization.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Dashboard -->
+
+<section class="container" id="dashboard">
+
+    <div class="section-title">
+        <h2>Interactive Olympic Dashboard</h2>
+        <p>Explore the data visualization below.</p>
+    </div>
+
+    <div class="dashboard-box">
+
+        <!-- Replace with your Tableau Public embed URL -->
+
+        <iframe
+            src="YOUR_TABLEAU_EMBED_URL"
+            allowfullscreen>
+        </iframe>
+
+        <center>
+
+            <a class="dashboard-button"
+               href="https://drive.google.com/file/d/1jEpklZfILJW7HROVOmr9BajW16A_1uyF/view?usp=sharing"
+               target="_blank">
+               Open Project File
+            </a>
+
+        </center>
+
+    </div>
+
+</section>
+
+<!-- Project Information -->
+
+<section class="container">
+
+    <div class="section-title">
+        <h2>Project Highlights</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Olympic History</h3>
+            <p>Explore historical Olympic sports data.</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Analytics</h3>
+            <p>Discover patterns and trends through data.</p>
+        </div>
+
+        <div class="card">
+            <h3>Visualization</h3>
+            <p>Understand insights through Tableau dashboards.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+
+<footer id="contact">
+
+    <h2>Global Olympic Sports Analysis</h2>
+
+    <p>Data Analytics and Visualization Project</p>
+
+    <p>Designed for Academic Project Presentation</p>
+
+    <p>© 2026 Global Olympic Sports Analysis</p>
+
+</footer>
+
+</body>
+</html>
